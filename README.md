@@ -1,16 +1,17 @@
 # Product Landing Page
 
-A responsive product landing page built using HTML and CSS.
+A responsive product landing page built using HTML and CSS and js
 This project focuses on designing a product presentation page with different sections such as features, pricing, and product information.
 
 ## Live Demo
 
-https://rawankhaled276.github.io/Product-Landing-Page/
+https://watchifyweb.netlify.app/
 
 ## Technologies Used
 
 * HTML5
 * CSS3
+* js
 
 ## Features
 
