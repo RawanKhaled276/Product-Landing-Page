@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Product Landing Page</title>
+  <title>Watchify — Premium Smartwatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<header id="header">
+<!--<header id="header">
   <img id="header-img" src="https://static.vecteezy.com/system/resources/previews/051/084/944/non_2x/a-black-and-white-logo-for-watches-vector.jpg" alt="Logo">
    <nav id="nav-bar">
       <a class="nav-link" href="#features">Features</a>
@@ -57,6 +60,223 @@
         <p>$50/month</p>
       </div>
     </div>
+  </section> -->
+<body>
+
+  <!-- NAVBAR -->
+  <header id="header">
+    <a href="#hero" class="logo-link">
+      <img id="header-img"
+        src="https://static.vecteezy.com/system/resources/previews/051/084/944/non_2x/a-black-and-white-logo-for-watches-vector.jpg"
+        alt="Watchify Logo">
+      <span class="brand-name">Watchify</span>
+    </a>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#testimonials">Reviews</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="dark-toggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <a href="#pricing" class="btn-nav-cta">Buy Now</a>
+    </div>
+    <button id="hamburger" aria-label="Open menu">&#9776;</button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <a class="nav-link" href="#features">Features</a>
+    <a class="nav-link" href="#video-section">Video</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+    <a class="nav-link" href="#testimonials">Reviews</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Next-Gen Smartwatch</span>
+      <h1>Time Reimagined.<br><em>Life Elevated.</em></h1>
+      <p>Watchify blends Swiss-inspired design with cutting-edge health technology. Your ultimate everyday companion.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+        <button id="submit" type="submit" class="btn-cta">
+          <span>Get Early Access</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+      <p class="hero-note">No spam. Unsubscribe anytime. Join 12,000+ early adopters.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="watch-ring ring-1"></div>
+      <div class="watch-ring ring-2"></div>
+      <div class="watch-face">
+        <div class="watch-screen">
+          <span class="watch-time" id="live-time">00:00</span>
+          <span class="watch-date" id="live-date">MON 01</span>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="section-label">Why Watchify</div>
+    <h2 class="section-title">Built for the way you live</h2>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">💧</div>
+        <h3>Waterproof</h3>
+        <p>100m water resistance. Swim, surf, or shower without a second thought.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">❤️</div>
+        <h3>Heart Rate Monitor</h3>
+        <p>24/7 optical heart rate tracking with ECG-grade accuracy alerts.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🏃</div>
+        <h3>Fitness Tracking</h3>
+        <p>Over 100 workout modes with real-time coaching and progress insights.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔔</div>
+        <h3>Smart Notifications</h3>
+        <p>Calls, messages, and app alerts — delivered with a subtle haptic tap.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔋</div>
+        <h3>Long Battery Life</h3>
+        <p>Up to 14 days on a single charge. Power through every adventure.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🌙</div>
+        <h3>Sleep Insights</h3>
+        <p>Deep sleep analysis with personalized tips to improve your rest quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video-section">
+    <div class="section-label">See It in Action</div>
+    <h2 class="section-title">Watch Watchify come alive</h2>
+    <div class="video-wrapper">
+      <div class="yt-facade" onclick="window.open('https://www.youtube.com/watch?v=ccxwTzGtXJ8','_blank')">
+        <img
+          src="https://img.youtube.com/vi/ccxwTzGtXJ8/maxresdefault.jpg"
+          onerror="this.src='https://img.youtube.com/vi/ccxwTzGtXJ8/hqdefault.jpg'"
+          alt="Watch product video"
+          class="yt-thumb"
+        >
+        <div class="yt-overlay"></div>
+        <button class="yt-play-btn" aria-label="Play video">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/>
+            <path d="M45 24 27 14v20" fill="#fff"/>
+          </svg>
+        </button>
+        <div class="yt-label">Watch on YouTube</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="section-label">Simple Pricing</div>
+    <h2 class="section-title">Choose your plan</h2>
+    <div class="pricing-container">
+      <div class="pricing-box reveal">
+        <div class="plan-badge">Basic</div>
+        <div class="plan-price">$10<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Basic health tracking</li>
+          <li>✓ Notifications</li>
+          <li>✓ 7-day battery</li>
+          <li class="disabled">✗ Sleep insights</li>
+          <li class="disabled">✗ ECG monitor</li>
+        </ul>
+        <a href="#form" class="btn-plan">Get Basic</a>
+      </div>
+      <div class="pricing-box featured reveal">
+        <div class="popular-tag">Most Popular</div>
+        <div class="plan-badge">Pro</div>
+        <div class="plan-price">$25<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Advanced health tracking</li>
+          <li>✓ Smart notifications</li>
+          <li>✓ 14-day battery</li>
+          <li>✓ Sleep insights</li>
+          <li class="disabled">✗ ECG monitor</li>
+        </ul>
+        <a href="#form" class="btn-plan">Get Pro</a>
+      </div>
+      <div class="pricing-box reveal">
+        <div class="plan-badge">Premium</div>
+        <div class="plan-price">$50<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>✓ Full health suite</li>
+          <li>✓ Priority notifications</li>
+          <li>✓ 14-day battery</li>
+          <li>✓ Sleep insights</li>
+          <li>✓ ECG monitor</li>
+        </ul>
+        <a href="#form" class="btn-plan">Get Premium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="section-label">Real People</div>
+    <h2 class="section-title">Loved by thousands</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Watchify changed how I approach fitness. The heart rate alerts saved me during an intense workout."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SM</div>
+          <div><strong>Sara M.</strong><span>Marathon Runner</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The battery life is insane. I went on a 10-day camping trip and never had to charge once."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JK</div>
+          <div><strong>James K.</strong><span>Outdoor Enthusiast</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★☆</div>
+        <p>"Elegant design, smooth interface. It looks stunning in meetings and tracks my health perfectly."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">LA</div>
+          <div><strong>Layla A.</strong><span>Product Designer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://static.vecteezy.com/system/resources/previews/051/084/944/non_2x/a-black-and-white-logo-for-watches-vector.jpg" alt="Watchify" height="36" style="border-radius:6px">
+        <span>Watchify</span>
+      </div>
+      <nav class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#video-section">Video</a>
+      </nav>
+      <p class="footer-copy">© 2025 Watchify. All rights reserved.</p>
+    </div>
+  </footer>
+ <script src="script.js"></script>
 </body>
 </html>
