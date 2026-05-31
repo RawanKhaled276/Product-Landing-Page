@@ -5,7 +5,7 @@ This project focuses on designing a product presentation page with different sec
 
 ## Live Demo
 
-https://watchifyweb.netlify.app/
+https://watchify-page.netlify.app/
 
 ## Technologies Used
 
